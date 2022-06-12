@@ -1,0 +1,61 @@
+{
+  "name": "TestApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ./src/",
+    "lint:fix": "eslint ./src/ --fix",
+    "lint-rule-timings": "cross-env TIMING=1 yarn lint",
+    "prettier:check": "prettier --check ./src/",
+    "prettier:write": "prettier --write ./src/",
+    "prepare": "husky install",
+    "precommit": "npm run prettier:write",
+    "prepush": "npm run lint:fix"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.6.6",
+    "@react-navigation/native": "^6.0.10",
+    "@react-navigation/native-stack": "^6.6.2",
+    "graphql": "^16.5.0",
+    "react": "17.0.2",
+    "react-native": "0.68.2",
+    "react-native-safe-area-context": "^4.3.1",
+    "react-native-screens": "^3.13.1",
+    "react-native-splash-screen": "^3.3.0",
+    "react-native-svg": "^12.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/runtime": "^7.18.3",
+    "@types/react": "^18.0.12",
+    "@types/react-native": "^0.67.8",
+    "@types/react-test-renderer": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "babel-jest": "^28.1.1",
+    "babel-plugin-inline-import": "^3.0.0",
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-react-native": "^3.11.0",
+    "husky": "^8.0.1",
+    "jest": "^28.1.1",
+    "metro-react-native-babel-preset": "^0.71.0",
+    "prettier": "^2.6.2",
+    "react-native-svg-transformer": "^1.0.0",
+    "react-test-renderer": "17.0.2",
+    "typescript": "^4.7.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
